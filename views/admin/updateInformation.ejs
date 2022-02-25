@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Update Information</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.0.2 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        
+        <% include sidebar.ejs %> 
+
+        <div class="row content bgBase hvh">
+            <div class="col p-5">
+                <p class="fs-4 text-white">Update Information</p>
+                <form action="/admin/updateInformation/<%= data[0].id %> " method="post">
+                    <div class="mb-3 inputLogin">
+                        <label for="title" class="form-label text-white">Title</label>
+                        <input type="text" name="judul" id="title" class="form-control" value="<%= data[0].judul %> ">
+                    </div>
+                    <div class="mb-3 inputLogin">
+                        <label for="kategori" class="form-label text-white">Category</label>
+                        <select class="form-control" name="kategori" id="kategori" required>
+                            <option selected>Choose Category</option>
+                            <option value="Komputer">Komputer</option>
+                            <option value="Robotik">Robotik</option>
+                        </select>
+                    </div>
+                    <div class="d-flex">
+                        <div class="mb-3 inputLogin">
+                            <label for="hari" class="form-label text-white">Day</label>
+                            <select class="form-control" name="hari" id="hari" style="width: 170px;" required>
+                                <option selected>Choose Day</option>
+                                <option value="Senin">Senin</option>
+                                <option value="Selasa">Selasa</option>
+                                <option value="Rabu">Rabu</option>
+                                <option value="Kamis">Kamis</option>
+                                <option value="Jumat">Jumat</option>
+                                <option value="Sabtu">Sabtu</option>
+                                <option value="Minggu">Minggu</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 inputLogin ms-3">
+                            <label for="tanggal" class="form-label text-white">Date</label>
+                            <input type="date" name="tanggal" id="tanggal" class="form-control" style="width: 170px;" value="<%= data[0].tanggal %> " required>
+                        </div>
+                        <div class="mb-3 inputLogin ms-3">
+                            <label for="waktu" class="form-label text-white">Time</label>
+                            <input type="time" name="waktu" id="waktu" class="form-control" style="width: 170px;" value="<%= data[0].waktu %> " required>
+                        </div>
+                    </div>
+                    <div class="mb-3 inputLogin">
+                        <label for="lokasi" class="form-label text-white">location</label>
+                        <input type="text" name="lokasi" id="lokasi" class="form-control" value="<%= data[0].lokasi %> ">
+                    </div>
+                    <div class="mb-3 btnLogin inputLogin d-flex flex-row-reverse">
+                        <button type="submit" class="form-control btn text-white" style="width: 222px;">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+.bgBase
+{
+  background: #0e6acd !important;
+}
+
+.login
+{
+  border-radius: 50px;
+background: #0e6acd;
+box-shadow:  20px 20px 60px #0c5aae,
+              -20px -20px 60px #107aec;
+}
+
+.inputLogin input,
+.inputLogin select
+{
+  height: 35px;
+  padding: 0;
+  border: none;
+  background: #0e6acd;
+  color: #fff;
+  box-shadow: -8px -8px 20px 0px #0c5aae, 8px 8px 20px #107aec;
+}
+
+.inputLogin button
+{
+  height: 35px;
+  padding: 0;
+  border: none;
+  background: #0e6acd;
+  box-shadow: 8px 8px 20px 0px #0c5aae, -8px -8px 20px #107aec;
+}
+
+.inputLogin button:hover
+{
+  box-shadow: -8px -8px 20px 0px #0c5aae, 8px 8px 20px #107aec;
+}
+
+.text-cyan
+{
+  color: #0dcaf0;
+}
+
+.text-cyan:hover
+{
+  color: #fff;
+}
+
+.sidebar
+{
+  width: 270px;
+  border-radius: 0 50px 50px 0;
+}
+
+.content
+{
+  position: relative;
+  left: 300px;
+  width: calc(100% - 300px);
+  border-radius: 50px;
+}
+
+.header i
+{
+  box-shadow: -8px -8px 20px 0px #0c5aae, 8px 8px 20px #107aec;
+}
+
+.body ul li
+{
+  width: 222px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  list-style: none;
+  height: 35px;
+  padding: 0;
+  border: none;
+  border-radius: 20px;
+  background: #0e6acd;
+  box-shadow: 8px 8px 20px 0px #0c5aae, -8px -8px 20px #107aec;
+}
+
+.body ul li:hover,
+.btnNeu:hover,
+.tableNeu tr:nth-child(odd):hover
+{
+  box-shadow: -8px -8px 20px 0px #0c5aae, 8px 8px 20px #107aec;
+}
+
+.tableNeu tr:nth-child(even):hover
+{
+  box-shadow: 8px 8px 20px 0px #0c5aae, -8px -8px 20px #107aec;
+}
+
+.body ul li a
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+.cardNeu,
+.tableNeu
+{
+  box-shadow: 8px 8px 20px 0px #0c5aae, -8px -8px 20px #107aec;
+  border: none !important;
+  border-radius: 20px !important;
+}
+
+.hvh
+{
+  height: 100vh;
+}
+
+.tableNeu tr:nth-child(odd)
+{
+  box-shadow: 8px 8px 20px 0px #0c5aae, -8px -8px 20px #107aec;
+}
+
+
+
+.tableNeu table
+{
+  border-spacing: 10px;
+  width: 100%;
+}
+
+.btnNeu
+{
+  height: 35px;
+  width: 222px;
+  box-shadow: 8px 8px 20px 0px #0c5aae, -8px -8px 20px #107aec;
+  border-radius: 20px;
+}
+
+.text-Bgbase
+{
+  color: #0e6acd;
+}
+
+.btnLogin
+{
+  margin-top: 175px;
+}
